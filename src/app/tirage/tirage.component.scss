@@ -1,14 +1,19 @@
 .gauche{
+    margin-left: -19px;
+}
 
-        position: absolute;
-        width: 627px;
-        height: 520px;
-        left: 738px;
-        top: 266px;
-        border-radius: 0px;
-        margin-top: -109px;
-        margin-left: -22px;
-    }
+//    // position: absolute;
+//     // width: 627px;
+//     // height: 520px;
+//     // left: 587px;
+//     // top: 257px;
+//     border-radius: 0px;
+//     // margin-top: -109px;
+//     // margin-left: -22px;
+// }
+// h2.h2_d {
+//     margin-top: 35px;
+// }
 //.drt{
    // position: absolute;
 //width: 528px;
@@ -49,12 +54,14 @@ h1.drt {
     .li_tirage_droite {
         
         font-size: 24px;
-        margin-top: -1px;
-        margin-top: -5px;
-        margin-left: 3px;
+        // margin-top: -1px;
+        // margin-top: -5px;
+        // margin-left: 3px;
         color: #ff6600;
         font-weight: bold;
-
+       
+        margin-left: 5px;
+        margin-top: -12px;
     }
 
     .li_tirage_gauche {
@@ -78,8 +85,7 @@ h1.drt {
 
 .nbre_gauche{
     font-size: 24px;
-    margin-top: -1px;
-    margin-top: -5px;
+    margin-top: -10px;
     margin-left: 3px;
     color: #ff6600;
     font-weight: bold;
@@ -92,10 +98,15 @@ h1.drt {
     font-weight: bold;
 }
 .select {
-    margin-left: -3px;
+    // margin-left: -3px;
+    // font-size: 24px;
+    // font-weight: bold;
+    // margin-top: -8px;
+    color: blue;
+    margin-left: -1px;
     font-size: 24px;
+    margin-top: -2px;
     font-weight: bold;
-    margin-top: -8px;
 }
 p {
     margin-top: 23px;
@@ -105,23 +116,28 @@ p {
 h4 {
     margin-left: 38px;
 }
-.droite {
-  
-    margin-left: 200px;
-    margin-top: -96px;
-
+ .droite {
+        margin-left: 200px;
+ }
+.centre{
+    display: grid;
+    grid-template-columns: auto auto;
 }
 img {
 
-        margin-left: 840px;
-        height: 200;
-        max-height: 312px;
-        margin-top: -175px;
+   
     
+    margin-left: 760px;
+    height: 100;
+    max-height: 303px;
+    margin-top: -178px;
+
+
 }
+
 .container
 {
-margin-top: 117px;
+    margin-top: 0px;
 }
 input[type="text"] {
     height: 35px;
@@ -157,13 +173,22 @@ input[type="number"] {
 
 button.droite{
    
+    // border: 3px #ff6600 solid;
+    // border-radius: 30px;
+    // background-color: #ff6600;
+    // font-size: 24px;
+    // color: white;
+    // margin-top: 26px;
+    // margin-left: -1px;
+    // font-weight: bold;
+    // box-shadow:2px 2px 2px 2px rgb(19, 19, 20);
     border: 3px #ff6600 solid;
     border-radius: 30px;
     background-color: #ff6600;
     font-size: 24px;
     color: white;
-    margin-top: 26px;
-    margin-left: -1px;
+    margin-top: 2px;
+    margin-left: -37px;
     font-weight: bold;
     box-shadow:2px 2px 2px 2px rgb(19, 19, 20);
 }
@@ -178,4 +203,7 @@ button{
         font-weight: bold;
         box-shadow:2px 2px 2px 2px rgb(19, 19, 20);
         
+    }
+    button:hover {
+        background-color: rgb(19, 16, 16);
     }
