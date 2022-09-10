@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TirageComponent } from './tirage/tirage.component';
+import { DetailsTirageComponent } from './details-tirage/details-tirage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TirageComponent
+    TirageComponent,
+    DetailsTirageComponent
   ],
   imports: [
     BrowserModule,
