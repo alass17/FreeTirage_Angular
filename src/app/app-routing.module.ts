@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { ListePostulantComponent } from './liste-postulant/liste-postulant.component';
 import { TirageComponent } from './tirage/tirage.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'Liste Postulant', component:ListePostulantComponent},
   {path:'voir-postulant', component:VoirPostulantsComponent},
   {path:'voir-tirage', component:TirageComponent}
+
 ];
 
 @NgModule({

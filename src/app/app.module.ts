@@ -7,6 +7,9 @@ import { TirageComponent } from './tirage/tirage.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { ListePostulantComponent } from './liste-postulant/liste-postulant.component';
 import { VoirPostulantsComponent } from './voir-postulants/voir-postulants.component';
+import { DetailsTirageComponent } from './details-tirage/details-tirage.component';
+//aaa
+import{ HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { VoirPostulantsComponent } from './voir-postulants/voir-postulants.compo
     TirageComponent,
     AcceuilComponent,
     ListePostulantComponent,
-    VoirPostulantsComponent
+    VoirPostulantsComponent,
+    DetailsTirageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // aaa
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
