@@ -1,41 +1,31 @@
+<div>
+
 
 <!-- Texte Description -->
 <h1>Voici les coordonnées des postulants:</h1>
-<ul>
-  <li *ngFor= "let Postulants of postulants" > 
-    {{postulants.id_postulant}}
-     ||{{postulants.nom_postulant}} || {{ postulants.prenom_postulant}} 
-    || {{ postulants.numero_postulant}} || {{ postulants.email_postulant}} </li>
-</ul>
+<!-- <ul *ngFor= "let Postulant of postulants">
+  <li> 
+    
+    {{Postulant.id_postulant}}
+     ||{{Postulant.nom_postulant}} || {{ Postulant.prenom_postulant}} 
+    || {{ Postulant.numero_postulant}} || {{ Postulant.email_postulant}} </li>
+</ul> -->
 
 <!-- Tableau Liste Postulants -->
 <table id="Entete">
-  <tr>
+   <tr>
     <th>Nom</th>
     <th>Prenom</th>
     <th>Email</th>
     <th>Numero</th>
   </tr>
-  <tr>
-    <td> Keita</td>
-    <td>Ali</td>
-    <td>ali@gmail</td>
-    <td>76767676</td>
+  <tr *ngFor= "let Postulant of postulants">
+    <td> {{Postulant.nom_postulant}}</td>
+    <td>{{ Postulant.prenom_postulant}}</td>
+    <td>{{ Postulant.email_postulant}}</td>
+    <td>{{ Postulant.numero_postulant}}</td>
   </tr>
-  <tr>
-   <td> Traore</td>
-   <td>Oumar</td>
-   <td>oumar@gmail</td>
-   <td>66767676</td>
-  </tr>
-  <tr>
-    <td> Kida</td>
-   <td>Fanta</td>
-   <td>fanta@gmail</td>
-   <td>99002211</td>
-  </tr>
-</table>
 
+</table> 
 
-<!-- aaa -->
-
+</div>

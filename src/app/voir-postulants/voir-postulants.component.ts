@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Postulants } from '../postulants';
 import { PostulantsService } from '../postulants.service';
 import { Tirageclasse } from '../tirageclasse';
 import { TirageserviceService } from '../tirageservice.service';
@@ -13,14 +14,15 @@ import { TirageserviceService } from '../tirageservice.service';
 })
 export class VoirPostulantsComponent implements OnInit {
   // aaa
-  postulants : any;
+  postulants! : Postulants[];
 
   constructor( /**/ private service : PostulantsService) { }
 
   ngOnInit(): void {
     // aa
    this.service.getPostulants().subscribe(data=>{
-     this.postulants=data
+    console.log(data);
+     this.postulants=data;
    });
   }
 

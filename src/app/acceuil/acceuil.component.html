@@ -44,24 +44,13 @@
           <th>Libelle</th>
           <th>Nbre personne sur une liste</th>
         </tr>
-        <tr>
-          <td>1</td>
-          <td>2022-08-24</td>
-          <td>Liste 1</td>
+        <tr *ngFor="let ListePostulant of acceuillist">
+          <td>{{ListePostulant.id_liste_postulant}}</td>
+          <td>{{ListePostulant.libelle}}</td>
+          <td>{{ListePostulant.date}}</td>
           <td>2</td>
         </tr>
-        <tr>
-         <td>1</td>
-          <td>2022-08-24</td>
-          <td>Liste 1</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>2022-08-24</td>
-          <td>Liste 1</td>
-          <td>2</td>
-        </tr>
+        
       </table>
     
     </div>
