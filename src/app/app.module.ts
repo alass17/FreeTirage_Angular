@@ -5,13 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TirageComponent } from './tirage/tirage.component';
 import { DetailsTirageComponent } from './details-tirage/details-tirage.component';
-import { HttpClient } from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
-    TirageComponent, 
-    DetailsTirageComponent,
- 
+    TirageComponent,
+    DetailsTirageComponent
   ],
   imports: [
     BrowserModule,

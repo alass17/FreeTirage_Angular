@@ -1,0 +1,144 @@
+h1{
+    color: #E96429;
+    text-align: center;
+    font-size: 40px;
+  }
+  h2{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+  }
+  .contenair{
+    display: flex;
+    padding-top: 70px;
+    justify-content: space-between;
+  }
+  
+  // Statistique
+  
+  .statistique {
+    margin-top: -5vh;
+    display: flex;
+    list-style: none;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: bold;
+    justify-content: space-between;
+  
+  }
+  
+  .statistique h1{
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 4vh;
+  }
+  
+  .statistique h3{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 4px;
+  }
+  
+  
+  // Faire Tirage au sort
+  
+  .mon_trie{
+  justify-content: space-between;
+   display: flex;
+   padding-top: 90px;
+  
+  }
+  button{
+    font-size: 40px;
+    background-color: #E96429;
+    border: 2px rgb(237, 100, 134) solid ;
+    border-radius: 12px;
+    margin-top: 48px;
+    margin-left: 204px;
+  }
+  // Le a à l'intérieur du button
+  a{
+    text-decoration: none;
+    color: #ddd;
+    font-weight: bold;
+  }
+  
+  
+  img{
+  
+    margin-top: -75px;
+    margin-right: 2px;
+  }
+  
+  //Listetable
+  .Listetable{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    padding-top: 50px;
+    font-weight: bold;
+  }
+  
+  p{
+    font-weight: bold;
+    padding-left: 281px;
+    font-size: 40px;
+    margin-top: 6px;
+    margin-left: -230px;
+  
+  }
+  
+  // Tableau Liste
+  #Entete th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  
+    background-color: #E96429;
+    color: white;
+  
+  }
+  #Entete {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  
+  }
+  
+  #Entete td, #Entete th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #Entete tr:nth-child(even){
+    background-color: #f2f2f2;
+  }
+  
+  #Entete tr:hover {
+    background-color: #ddd;
+  }
+  
+  .Tout{
+    
+  }
+  
+  // Responsive
+  @media screen and ( max-width : 900px ){
+    .Tout{
+      width: 100%;
+    }
+    h1{
+      width: 100%;
+
+    }
+   
+  }
+  @media screen and (max-width: 750px){
+    h1{
+      width: 100%;
+   }
+  
+}
