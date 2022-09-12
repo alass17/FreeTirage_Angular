@@ -1,27 +1,27 @@
 import { Component, OnInit } from '@angular/core';
+import { PostulantsService } from '../postulants.service';
+import { Tirageclasse } from '../tirageclasse';
+import { TirageserviceService } from '../tirageservice.service';
 
 //aaaa
-import{ TirageserviceService } from '../tirageservice.service';
 
-@Component({
+@Component({ 
   selector: 'app-voir-postulants',
   templateUrl: './voir-postulants.component.html',
   styleUrls: ['./voir-postulants.component.scss']
+   
 })
 export class VoirPostulantsComponent implements OnInit {
-  //postulants: Any;
-  postulants :any;
+  // aaa
+  postulants : any;
 
-  constructor( /*private service : PostulantService*/ private service : TirageserviceService) { }
+  constructor( /**/ private service : PostulantsService) { }
 
   ngOnInit(): void {
-    //this.service.getPostulants().subcribe(data=>{
-    // this.Postulants=data;
-   // })
+    // aa
    this.service.getPostulants().subscribe(data=>{
-     this.postulants=data;
-   })
-
+     this.postulants=data
+   });
   }
 
 }

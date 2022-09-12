@@ -17,7 +17,7 @@ h1{
   
   // Statistique
   
-  .chif {
+  .statistique {
     margin-top: -5vh;
     display: flex;
     list-style: none;
@@ -29,13 +29,13 @@ h1{
   
   }
   
-  .chif h1{
+  .statistique h1{
     font-size: 80px;
     text-align: center;
     margin-bottom: 4vh;
   }
   
-  .chif h3{
+  .statistique h3{
     font-size: 40px;
     text-align: center;
     margin-top: 4px;
@@ -121,16 +121,24 @@ h1{
     background-color: #ddd;
   }
   
-  
+  .Tout{
+    
+  }
   
   // Responsive
   @media screen and ( max-width : 900px ){
-    Tout{
+    .Tout{
       width: 100%;
     }
     h1{
       width: 100%;
-      background-color: red;
+
     }
-  
+   
   }
+  @media screen and (max-width: 750px){
+    h1{
+      width: 100%;
+   }
+  
+}

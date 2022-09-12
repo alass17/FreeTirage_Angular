@@ -10,6 +10,7 @@ import { VoirPostulantsComponent } from './voir-postulants/voir-postulants.compo
 import { DetailsTirageComponent } from './details-tirage/details-tirage.component';
 //aaa
 import{ HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import{ HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     // aaa
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
