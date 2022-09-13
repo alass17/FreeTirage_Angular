@@ -10,22 +10,22 @@
     <th>Libelle</th>
     <th>Nombre Postulants</th>
   </tr>
+  <tr *ngFor="let Liste of listpost">
+    <td>{{Liste.id_liste_postulant}}</td>
+    <td>{{Liste.libelle}}</td>
+    <td>{{Liste.date}}</td>
+    <td class="Voir_Postulants"> <a  routerLink="/voir-postulant"  routerLinkActive="active"> Voir Postulants</a></td>
+  </tr>
   <tr>
-    <td>1</td>
+   <!-- <td>1</td>
     <td>2022-08-24</td>
     <td>Liste 1</td>
     <td class="Voir_Postulants"> <a  routerLink="/voir-postulant"  routerLinkActive="active"> Voir Postulants</a></td>
   </tr>
   <tr>
-   <td>1</td>
-    <td>2022-08-24</td>
-    <td>Liste 1</td>
-    <td class="Voir_Postulants"> <a  routerLink="/voir-postulant"  routerLinkActive="active"> Voir Postulants</a></td>
-  </tr>
-  <tr>
     <td>1</td>
     <td>2022-08-24</td>
     <td>Liste 1</td>
-    <td class="Voir_Postulants"> <a  routerLink="/voir-postulant"  routerLinkActive="active"> Voir Postulants</a></td>
+    <td class="Voir_Postulants"> <a  routerLink="/voir-postulant"  routerLinkActive="active"> Voir Postulants</a></td> -->
   </tr>
 </table>

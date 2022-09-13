@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+//aa
+import { AcceuilListService } from '../acceuil-list.service';
 
 @Component({
   selector: 'app-acceuil',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./acceuil.component.scss']
 })
 export class AcceuilComponent implements OnInit {
+  //aaa
+  acceuillist: any;
 
-  constructor() { }
+  constructor( private service : AcceuilListService) { }
 
   ngOnInit(): void {
+    this.service.getAcceuilList().subscribe(data=>{
+      this.acceuillist=data;
+
+    });
+
   }
 
 }
