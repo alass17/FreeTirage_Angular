@@ -1,7 +1,7 @@
 
 
 
- ul {
+ .entete {
      list-style-type: none;
      margin: 0;
      padding: 0;
@@ -33,25 +33,50 @@
 
 
 
-.footer {
-        background-color: BLACK;
-        margin-top: 3%;
-        width: 100%;
-        color: white;
-        height: 117px;
-        padding: 10px;
-    
-}
-.position li{
-    display: inline-block;
-    text-decoration: none;
-    margin: 50px;
-    text-align:center;
-}
-ul.pied{
+
+
+   .foot{
+    position: relative;
+    display: flex;
+    color: orangered;
     text-align: center;
-    margin-top: -32px;
-    background: none;
-    
+    background-color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0px;
+    padding: 34px;
+    margin-top: 0px;
+    padding-left: 190px;
+
+
+
 }
 
+.pied{
+
+    padding-left: 20px;
+    font-weight: bold;
+    padding-right: 189px;
+
+}
+h5{
+    display: block;
+    color: white;
+    /* text-align: center; /
+    / text-decoration: none; */
+    position: absolute;
+    TOP: 50px;
+    PADDING-LEFT: 35px;
+}
+.pir{
+    display: block;
+    color: white;
+    padding-left: -17px;
+    position: absolute;
+    bottom: 0px;
+    PADDING-LEFT: 19px;
+}
+.bi-youtube{
+    margin-left: 12px;
+    margin-right: 12px;
+}

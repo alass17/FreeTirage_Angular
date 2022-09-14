@@ -1,5 +1,6 @@
 .gauche{
     margin-left: -19px;
+    margin-top: 3px;
 }
 
 //    // position: absolute;
@@ -90,13 +91,13 @@ h1.drt {
     color: #ff6600;
     font-weight: bold;
 }
-.import {
-    color: blue;
-    margin-left: -1px;
-    font-size: 24px;
-    margin-top: -2px;
-    font-weight: bold;
-}
+// .import {
+//     color: blue;
+//     margin-left: -1px;
+//     font-size: 24px;
+//     margin-top: -2px;
+//     font-weight: bold;
+// }
 .select {
     // margin-left: -3px;
     // font-size: 24px;
@@ -127,7 +128,7 @@ img {
 
    
     
-    margin-left: 760px;
+    margin-left: 879px;
     height: 100;
     max-height: 303px;
     margin-top: -178px;
@@ -214,4 +215,15 @@ button{
     background-color: #4e4e4e;
     color: white;
     font-size: 20px;
+    width: 350px;
+    }
+     a{
+        text-decoration: none;
+        color: blue;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    svg.bi.bi-upload {
+        color: blue;
+        font-weight: bold;
     }
