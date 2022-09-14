@@ -13,6 +13,6 @@ export class ListpostService {
   // getAcceuilList():Observable<object>
   getListpost():Observable<object>
   {
-return this.http.get("http://localhost:8080/listepostulant/lire")
+return this.http.get("http://localhost:8080/listepostulant/read")
   }
 }

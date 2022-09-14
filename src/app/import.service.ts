@@ -18,4 +18,4 @@ export class ImportService {
   return this.http.post<void>(`${this.api}/postulant/upload/${libelle}`, data);
   }
   
-}
+}                                                                                                     

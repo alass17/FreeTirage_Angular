@@ -1,16 +1,14 @@
-<div class="tout">
-<div class="import"> 
 
+
+<div class="Tout">
     <form [formGroup]="formmodule" (ngSubmit)="importerliste()">
         <div class="titre">Importer une liste</div><br><br>
-        <label class="nom">Nom de liste</label><br><br>
-        <input  class="text" type="text"  placeholder="Entrer le libellé de la liste" name="libelle" formControlName="libelle"/><br><br>
-        <label class="date">Date d'importation</label><br><br>
-        <input  class="textd" type="date" name="dateimport" formControlName="dateimport"/> <br><br>
-        <label class="choisir">Choisir le fichier</label><br><br>
-        <input class="text" type="file" name="file" formControlName="file" (change)="fileChange($event)"/> <br> <br>
+        <label>Nom de liste</label><br><br>
+        <input  class="inputText" type="text"  placeholder="Entrer le libellé de la liste" name="libelle" formControlName="libelle"/><br><br>
+        <label>Date d'importation</label><br><br>
+        <input  class="inputText" type="date" name="dateimport" formControlName="dateimport"/> <br><br>
+        <label>Choisir le fichier</label><br><br>
+        <input class="fichierImp" type="file" name="file" formControlName="file" (change)="fileChange($event)"/> <br> <br>
         <button type="submit">Importer</button><br><br>
     </form>
-    
-    </div>
 </div>

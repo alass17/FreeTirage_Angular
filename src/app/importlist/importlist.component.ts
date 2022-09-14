@@ -11,7 +11,7 @@ import { ImportService } from '../import.service';
 })
 export class ImportlistComponent implements OnInit {
   formmodule!:FormGroup;
-  file!:any;
+  file:any;
   liste!:Import;
   constructor(private request:ImportService, private formB:FormBuilder, private http:HttpClient) { }
 
@@ -29,11 +29,12 @@ export class ImportlistComponent implements OnInit {
 
   importerliste(){
     this.liste=this.formmodule.value
-    this.request.addListe(this.liste.libelle, this.file).subscribe(
-      data =>{
+    this.request.addListe(this.liste.libelle, this.file).subscribe(data =>{
       this.formmodule.reset();
+    });
+      
     }
-  )}
+  
 
 }
 
