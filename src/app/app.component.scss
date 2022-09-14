@@ -55,3 +55,12 @@ ul.pied{
     
 }
 
+
+//Responsive
+
+@media screen and (max-width: 9000px) {
+  .ul{
+    display: none;
+  }
+  
+}

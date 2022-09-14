@@ -10,6 +10,12 @@ import { VoirPostulantsComponent } from './voir-postulants/voir-postulants.compo
 import { DetailsTirageComponent } from './details-tirage/details-tirage.component';
 //aaa
 import{ HttpClientModule } from '@angular/common/http';
+//fff
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// VoirPostulant Sucroller la table
+import { Ng2SearchPipeModule } from 'ng2-search-filter'; 
+import{NgxPaginationModule} from 'ngx-pagination';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,13 +23,21 @@ import{ HttpClientModule } from '@angular/common/http';
     AcceuilComponent,
     ListePostulantComponent,
     VoirPostulantsComponent,
-    DetailsTirageComponent
+    DetailsTirageComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     // aaa
     HttpClientModule,
+    //fff
+    FormsModule,
+    ReactiveFormsModule, 
+    // VoirPostulant Sucroller la table
+    NgxPaginationModule,
+    Ng2SearchPipeModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

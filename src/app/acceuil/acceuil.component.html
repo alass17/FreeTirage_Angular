@@ -19,7 +19,7 @@
     
      <hr>
     <div class="mon_trie">
-     <div class="aa">
+     <div class="tirageausort">
         <p>Voulez-vous faire un tirage au sort ?</p>
     
          <button><a href="voir-tirage" >CLIQUEZ ICI</a>  </button>
@@ -44,13 +44,17 @@
           <th>Libelle</th>
           <th>Nbre personne sur une liste</th>
         </tr>
-        <tr *ngFor="let ListePostulant of acceuillist">
+        <!-- sucroller le Tableau à partir de 10 personnes -->
+        <tr *ngFor="let ListePostulant of acceuillist |paginate:{itemsPerPage:10, currentPage:a} ">
           <td>{{ListePostulant.id_liste_postulant}}</td>
-          <td>{{ListePostulant.libelle}}</td>
           <td>{{ListePostulant.date}}</td>
+          <td>{{ListePostulant.libelle}}</td>
           <td>2</td>
         </tr>
         
       </table>
+      <!-- Next en bas du Tableau à partir de 10 personnes -->
+   <div class="tablesucrol"> <pagination-controls (pageChange)="a = $event"> </pagination-controls> </div>
+
     
     </div>

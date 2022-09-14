@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup,NgForm} from '@angular/forms';
 import { Postulants } from '../postulants';
 import { PostulantsService } from '../postulants.service';
 import { Tirageclasse } from '../tirageclasse';
-import { TirageserviceService } from '../tirageservice.service';
+// import { TirageserviceService } from '../tirageservice.service';
 
 //aaaa
 
@@ -13,10 +14,22 @@ import { TirageserviceService } from '../tirageservice.service';
    
 })
 export class VoirPostulantsComponent implements OnInit {
+  searchText:any;
+  p!:number;
   // aaa
   postulants! : Postulants[];
 
-  constructor( /**/ private service : PostulantsService) { }
+  formulaireAjout!: FormGroup;
+  //fff
+  // errormsg:any;
+  //  successmg:any;
+  //  Postulants: Postulants= new Postulants();
+  //  PostulantsForm: FormGroup;
+  //  constructor(
+  //  private 
+  //  ){}
+
+  constructor( /*aaa*/ private service : PostulantsService) { }
 
   ngOnInit(): void {
     // aa
@@ -25,5 +38,12 @@ export class VoirPostulantsComponent implements OnInit {
      this.postulants=data;
    });
   }
+//ffff
+onSubmit(){
+  console.log("je suis du console");
+alert("je suis cliquer");
+}
+
+
 
 }

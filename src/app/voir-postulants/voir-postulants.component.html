@@ -1,31 +1,44 @@
 <div>
 
+  
 
-<!-- Texte Description -->
-<h1>Voici les coordonnées des postulants:</h1>
-<!-- <ul *ngFor= "let Postulant of postulants">
-  <li> 
+  <form [formGroup]="formulaireAjout" (ngSubmit)="onSubmit()">
+    <label for="nom">Nom :</label>
+    <input formControlName="nom" type="text"  id="nom" > <br><br>
     
-    {{Postulant.id_postulant}}
-     ||{{Postulant.nom_postulant}} || {{ Postulant.prenom_postulant}} 
-    || {{ Postulant.numero_postulant}} || {{ Postulant.email_postulant}} </li>
-</ul> -->
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom" name="prenom"> <br><br>
+    
+    <label for="email">Email :</label>
+    <input type="email" id="" name="email"> <br><br>
+    
+     <label for="number">Numéro :</label>
+    <input type="number" id="number" name="numero"> <br><br>
+    
+   <!-- <button>Enregistrer</button> -->
+    <input type="submit" name="envoi" value="Enregistrer">
+  </form>
 
 <!-- Tableau Liste Postulants -->
+<h1>Voici les coordonnées des postulants:</h1>
 <table id="Entete">
    <tr>
+    <th>N°</th>
     <th>Nom</th>
     <th>Prenom</th>
     <th>Email</th>
     <th>Numero</th>
   </tr>
-  <tr *ngFor= "let Postulant of postulants">
+  <!-- sucroller le Tableau à partir de 10 personnes -->
+  <tr *ngFor= "let Postulant of postulants |paginate: {itemsPerPage: 10, currentPage:p }">
+    <td> {{Postulant.id_postulant}}</td>
     <td> {{Postulant.nom_postulant}}</td>
     <td>{{ Postulant.prenom_postulant}}</td>
     <td>{{ Postulant.email_postulant}}</td>
     <td>{{ Postulant.numero_postulant}}</td>
   </tr>
-
 </table> 
+<!-- Next en bas du Tableau à partir de 10 personnes -->
+   <div class="tablesucrol"> <pagination-controls (pageChange)="p = $event"> </pagination-controls> </div>
 
 </div>

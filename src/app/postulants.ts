@@ -1,5 +1,5 @@
 export class Postulants {
-    // aaaa
+    // aaaa //fff
     id_postulant:number = 0;
 
     nom_postulant: string |undefined;
@@ -9,4 +9,5 @@ export class Postulants {
     numero_postulant: string |undefined;
 
     email_postulant: string |undefined;
+
 }

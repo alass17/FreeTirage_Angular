@@ -18,4 +18,9 @@ export class PostulantsService {
     // aaaa
     return this.http.get<Postulants[]>(`${this.url}`);
   }
+
+  // //fff
+    createNewUser(data:any): Observable<any> {
+    return this.http.post(`${this.url}`, data);
+  }
 }

@@ -12,7 +12,7 @@ export class AcceuilListService {
   constructor(/**/ private http:HttpClient) { }
   getAcceuilList():Observable<object>
   {
-return this.http.get("http://localhost:8080/listepostulant/read")
+return this.http.get("http://localhost:8080/listepostulant/lire")
   }
  
   }
