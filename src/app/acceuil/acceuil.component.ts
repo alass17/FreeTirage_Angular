@@ -8,6 +8,7 @@ import { AcceuilListService } from '../acceuil-list.service';
   styleUrls: ['./acceuil.component.scss']
 })
 export class AcceuilComponent implements OnInit {
+  a!:number;
   //aaa
   acceuillist: any;
 

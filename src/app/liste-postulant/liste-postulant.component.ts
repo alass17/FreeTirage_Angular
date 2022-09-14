@@ -9,6 +9,7 @@ import { ListpostService } from '../listpost.service';
   styleUrls: ['./liste-postulant.component.scss']
 })
 export class ListePostulantComponent implements OnInit {
+  l!:number
   
   // Appel de la classe
      listpost:any;

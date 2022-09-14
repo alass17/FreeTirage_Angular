@@ -121,22 +121,38 @@ h1{
     background-color: #ddd;
   }
   
-  // .Tout{
-    
-  // }
+
+  .tablesucrol{
+    text-align: center;
+  }
   
   // Responsive
   @media screen and ( max-width : 900px ){
     .Tout{
       width: 100%;
+      flex-wrap: wrap;
     }
     h1{
       width: 100%;
-
     }
-   
+    .mon_trie{
+      width: 100%;
+    }
+   .mon_trie{
+    width: 100%;
+    flex-wrap: wrap;
+   }
+   img{
+    margin-top: -75px;
+    margin-left: -129px;
+    font-size: 20px;
+   }
+   button{
+    margin-top: 0px;
+    margin-left: 1px;
+   }
   }
-  @media screen and (max-width: 750px){
+  @media screen and (max-width: 900px){
     h1{
       width: 100%;
    }

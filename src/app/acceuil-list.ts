@@ -4,6 +4,6 @@ export class AcceuilList {
 
     libelle: string |undefined;
 
-    date: string |undefined;
+    date: Date |undefined;
 
 }

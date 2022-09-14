@@ -1,7 +1,7 @@
 
 
 
- .entete {
+ .entete{
      list-style-type: none;
      margin: 0;
      padding: 0;
@@ -16,6 +16,7 @@
    }
  
    li a {
+
      display: block;
      color: white;
      text-align: center;
@@ -79,4 +80,13 @@ h5{
 .bi-youtube{
     margin-left: 12px;
     margin-right: 12px;
+}
+
+//Responsive
+
+@media screen and (max-width: 9000px) {
+  .ul{
+    display: none;
+  }
+  
 }
