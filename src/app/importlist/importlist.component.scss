@@ -4,16 +4,17 @@
     text-decoration: underline;
     font-weight: bold;
     color: #ff6600;
-    text-align: center;
+    display: block;
+    text-align: justify;
 }
 
 .import{
 
-    text-align: center;
-    /* padding-top: 440px; */
+  
     margin-top: 56px;
     margin-left: 511px;
     margin-bottom: 127px;
+    text-align: justify;
 }
 
 .text{
@@ -25,7 +26,7 @@
     background-color: #4e4e4e;
     font-size: 16px;
     color: white;
-    margin-left: -4px;
+    margin-left: -47px;
     box-shadow:2px 2px 2px 2px rgb(19, 19,20)
 }
 button{
@@ -34,8 +35,8 @@ button{
     background-color: #ff6600;
     font-size: 24px;
     color: white;
-    margin-top: 2px;
-    margin-left: 7px;
+    margin-top: 6px;
+    margin-left: 47px;
     font-weight: bold;
     box-shadow:2px 2px 2px 2px rgb(19, 19, 20);
 
@@ -66,7 +67,7 @@ input[type="file"]{
         background-color: #4e4e4e;
         font-size: 16px;
         color: #B6BBC1;
-        margin-left: -4px;
+        margin-left: 4px;
         box-shadow:2px 2px 2px 2px rgb(19, 19,20)
     }
     ::placeholder{
@@ -88,6 +89,19 @@ input[type="file"]{
     background-color: #4e4e4e;
     font-size: 16px;
     color: #B6BBC1;
-    margin-left: -4px;
+    margin-left: 37px;
     box-shadow:2px 2px 2px 2px rgb(19, 19,20)
+}
+.tout{
+    display: block;
+}
+
+label.nom {
+    margin-left: 44px;
+}
+label.date {
+    margin-left: 17px;
+}
+label.choisir {
+    margin-left: 18px;
 }
