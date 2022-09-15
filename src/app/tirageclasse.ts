@@ -1,14 +1,16 @@
+import { Import } from "./import";
+
 export class Tirageclasse {
 
 // // aaaa
-//     id_postulant!:Number;
+    id_tirage!:number;
 
-//     nom_postulant!:String;
+    libelle_tirage!:String;
 
-//     prenom_postulant!:String;
+    date_tirage!:String;
 
-//     numero_postulant!:String;
+    nbre_postulant_tirer!:number;
 
-//     email_postulant!:String;
+     id_listepost!: Import;
     
 }

@@ -30,7 +30,7 @@
     <th>Numero</th>
   </tr>
   <!-- sucroller le Tableau à partir de 10 personnes -->
-  <tr *ngFor= "let Postulant of postulants |paginate: {itemsPerPage: 10, currentPage:p }">
+  <tr *ngFor= "let Postulant of postulants |filter:searchText |paginate: {itemsPerPage: 10, currentPage:p }">
     <td> {{Postulant.id_postulant}}</td>
     <td> {{Postulant.nom_postulant}}</td>
     <td>{{ Postulant.prenom_postulant}}</td>

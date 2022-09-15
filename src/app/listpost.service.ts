@@ -11,8 +11,11 @@ export class ListpostService {
   constructor(/**/ private http:HttpClient) { }
   
   // getAcceuilList():Observable<object>
+
+
+
   getListpost():Observable<object>
   {
-return this.http.get("http://localhost:8080/listepostulant/read")
+     return this.http.get("http://localhost:8080/listepostulant/read")
   }
 }

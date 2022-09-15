@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,NgForm} from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
+import { count } from 'rxjs';
 import { Postulants } from '../postulants';
 import { PostulantsService } from '../postulants.service';
 import { Tirageclasse } from '../tirageclasse';
@@ -29,13 +31,19 @@ export class VoirPostulantsComponent implements OnInit {
   //  private 
   //  ){}
 
-  constructor( /*aaa*/ private service : PostulantsService) { }
+  constructor( /*aaa*/ private service : PostulantsService,
+                        private route: ActivatedRoute          
+  ) { }
 
   ngOnInit(): void {
     // aa
-   this.service.getPostulants().subscribe(data=>{
+
+    const id_tirage = +this.route.snapshot.params["id_tirage"];
+
+   this.service.getPostulants(id_tirage).subscribe(data=>{
     console.log(data);
      this.postulants=data;
+     console.log("Donner "+data)
    });
   }
 //ffff

@@ -16,7 +16,10 @@ const routes: Routes = [
   {path:'voir-postulant', component:VoirPostulantsComponent},
   {path:'voir-tirage', component:TirageComponent},
   {path:'Detail', component:DetailsTirageComponent},
-  {path:'importation', component:ImportlistComponent}
+  {path:'importation', component:ImportlistComponent},
+
+  {path :'detailsListe/:id_liste_postulant', component:VoirPostulantsComponent}
+
 
 ];
 

@@ -9,14 +9,16 @@ import { Postulants } from './postulants';
 })
 export class PostulantsService {
 
-  url = "http://localhost:8080/postulant/lire"
+   url = "http://localhost:8080/postulant/lire"
+
+
   
   constructor(private http:HttpClient) { }
 
-  getPostulants(): Observable<Postulants[]>
+  getPostulants(id_tirage:any): Observable<Postulants[]>
   {
     // aaaa
-    return this.http.get<Postulants[]>(`${this.url}`);
+    return this.http.get<Postulants[]>("http://localhost:8080/tirage/lesTirer/"+`${id_tirage}`);
   }
 
   // //fff

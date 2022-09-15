@@ -4,7 +4,7 @@
     <h2>NOS STATISTIQUES :</h2>
     <div class="statistique">
         <div class="box">
-            <h1 style="color:#DD2121">4</h1>
+            <h1 style="color:#DD2121">{{acceuillist.length}}</h1>
             <h3>Total liste tirée</h3>
         </div>
         <div class="box">
@@ -48,7 +48,7 @@
         <tr *ngFor="let ListePostulant of acceuillist |paginate:{itemsPerPage:10, currentPage:a} ">
           <td>{{ListePostulant[0]}}</td>
           <td>{{ListePostulant.date}}</td>
-          <td>{{ListePostulant.libelle}}</td>
+          <td [routerLink]="['/detailsListe',ListePostulant.id_liste_postulant]">{{ListePostulant.libelle}}</td>
           <td>2</td>
         </tr>
         

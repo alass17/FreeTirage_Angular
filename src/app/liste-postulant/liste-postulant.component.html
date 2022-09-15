@@ -13,9 +13,9 @@
   <!-- sucroller le Tableau à partir de 10 personnes -->
   <tr *ngFor="let Liste of listpost " >
     <td>{{Liste.id_liste_postulant}}</td>
-    <td>{{Liste.libelle}}</td>
+    <td >{{Liste.libelle}}</td>
     <td>{{Liste.date}}</td>
-    <td class="Voir_Postulants"> <a  routerLink="/voir-postulant"  routerLinkActive="active"> Voir Postulants</a></td>
+    <td class="Voir_Postulants"> <a   [routerLink]="['/detailsListe',Liste.id_liste_postulant]"  routerLinkActive="active"> Voir Postulants</a></td>
   </tr>
   <tr>
    <!-- <td>1</td>
