@@ -6,26 +6,24 @@
        
             <form action=""(ngSubmit)="OnSubmit()"> 
     <h2 class="h2_d">Tirage au sort sur une nouvelle liste</h2>
-
-             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
-                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
-              </svg>
-                <a href="importer" routerLink="/importation" routerLinkActive="active"> Importer une liste</a>
                  
-              
-              
-        
-
     <div  class="libelle">
         
-        <label>Libellé de la liste:<br></label>
+        <label></label>Libellé de la liste:
         <input type="text" name="libelle_liste" placeholder ="Entrer le libellé de la liste" [(ngModel)]="libelle"><br><br>
+
+
+         <!-- <label>Libellé de la liste:</label>
+        <input type="text" name="libelle_liste" placeholder ="Entrer le libellé de la liste" [(ngModel)]="libelle"><br><br> -->
+        <!-- <select class="option"[(ngModel)]="libelle" name="libelle">
+        
+        <option *ngFor="let liste of listeposts" [ngValue]="liste.libelle" name="libelle">{{liste.libelle}}</option><br><br>
+    </select> --> 
 </div>
 
         <div class="li_tirage_droite">
            
-                <label>Libellé du tirage:<br></label>
+                <label></label>Libellé du tirage:
                 <input type="text" name="libelle_tirage" placeholder="Entrer le libellé du tirage"[(ngModel)]="tirage.libelle_tirage" class="aa"><br><br>
             </div>
         
@@ -33,7 +31,7 @@
        
     <div class="nbre_droite">
         
-    <label></label>Nombre à trier:<br>
+    <label></label>Nombre à trier:
     <input type="number" name="number" min = "1" max ="1000" placeholder="Taper le nombre à tirer"[(ngModel)]="nombree">
 
 </div>
@@ -47,28 +45,32 @@
 </div>
 
         <form>
+            
 <div class="gauche">
     <h2>Tirage au sort sur une liste existante</h2>
 
     <div class=select>
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-expand" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z"/>
-          </svg>Selectionner une liste
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+            <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+          </svg>
+            <a href="importer" routerLink="/importation" routerLinkActive="active"> Importer une liste</a>
+            
         </div>
         
-
+  
 
 
         <div class="li_tirage_gauche">
            
-                <label>Libellé du tirage:<br></label>
+                <label>Libellé du tirage:</label>
                 <input type="text"  placeholder="Entrer le libellé du tirage"><br><br>
      </div>
         
        
     <div class="nbre_gauche">
         
-    <label></label>Nombre à trier:<br>
+    <label></label>Nombre à trier:
     <input type="number" min = "1" max ="1000" placeholder="Taper le nombre à tirer">
 
     </div>   
