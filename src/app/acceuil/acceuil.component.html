@@ -1,6 +1,6 @@
 <div class="Tout">
     <h1>Bienvenue sur le système de tirage au sort</h1>
-    
+
     <h2>NOS STATISTIQUES :</h2>
     <div class="statistique">
         <div class="box">
@@ -16,27 +16,27 @@
             <h3>Total tirage sur une liste</h3>
         </div>
      </div>
-    
+
      <hr>
     <div class="mon_trie">
      <div class="tirageausort">
         <p>Voulez-vous faire un tirage au sort ?</p>
-    
+
          <button><a href="voir-tirage" >CLIQUEZ ICI</a>  </button>
      </div>
-    
-    
+
+
             <div class="image">
                 <img src="assets/images/joueur.png" alt="image" width="500">
             </div>
     </div>
-    
+
     <hr>
      <div class="Listetable">
         <h2>Pour plus de détails sur la liste postulant:</h2>
-    
+
       </div>
-     
+
      <table id="Entete">
         <tr>
           <th>N°</th>
@@ -46,15 +46,15 @@
         </tr>
         <!-- sucroller le Tableau à partir de 10 personnes -->
         <tr *ngFor="let ListePostulant of acceuillist |paginate:{itemsPerPage:10, currentPage:a} ">
-          <td>{{ListePostulant[0]}}</td>
+          <td>{{ListePostulant.id_liste_postulant}}</td>
           <td>{{ListePostulant.date}}</td>
           <td [routerLink]="['/detailsListe',ListePostulant.id_liste_postulant]">{{ListePostulant.libelle}}</td>
           <td>2</td>
         </tr>
-        
+
       </table>
       <!-- Next en bas du Tableau à partir de 10 personnes -->
    <div class="tablesucrol"> <pagination-controls (pageChange)="a = $event" previousLabel="Précédente" nextLabel="Suivante"> </pagination-controls> </div>
 
-    
+
     </div>

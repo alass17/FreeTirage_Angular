@@ -1,53 +1,20 @@
 <h1>Voici les details des postulants tirés</h1>
 <table id="Entete">
     <tr>
+      <th>N°</th>
+      <th>Date</th>
       <th>Libelle</th>
-      <th>Nom</th>
-      <th>Prenom</th>
-      <th>Email</th>
-      <th>Numero</th>
+      <th>Nombres Tirés</th>
+      <th>Détails</th>
     </tr>
-    <tr>
-        <td>Liste 1</td>
-      <td>BAREMA</td>
-      <td>Djiguiba</td>
-      <td>djiguiba@gmail.com</td>
-      <td>76554893</td>
+    <tr *ngFor="let DetailTirage of detail|paginate:{itemsPerPage:5, currentPage:a}">
+      <td>{{DetailTirage.id_liste_postulant}}</td>
+      <td>{{DetailTirage.date}}</td>
+      <td>{{DetailTirage.libelle}}</td>
+        <td>Nombres Tirés</td>
+      <td class="Voir_Postulants"> <a   [routerLink]="['/detailsListe',DetailTirage.id_liste_postulant]"  routerLinkActive="active">Détails</a></td>
     </tr>
-    <tr>
-        <td>Liste 1</td>
-        <td>MALLE</td>
-        <td>Alassane</td>
-        <td>ba@gmail.com</td>
-        <td>76553493</td>
-    </tr>
-    <tr>
-        <td>Liste 1</td>
-        <td>DIALLO</td>
-        <td>Abdoulaye</td>
-        <td>diallo@gmail.com</td>
-        <td>76534893</td>
-    </tr>
-    <tr>
-        <td>Liste 1</td>
-        <td>DIALLO</td>
-        <td>Abdoulaye</td>
-        <td>diallo@gmail.com</td>
-        <td>76534893</td>
-    </tr>
-    <tr>
-        <td>Liste 1</td>
-        <td>DIALLO</td>
-        <td>Abdoulaye</td>
-        <td>diallo@gmail.com</td>
-        <td>76534893</td>
-    </tr>
-    <tr>
-        <td>Liste 1</td>
-        <td>DIALLO</td>
-        <td>Abdoulaye</td>
-        <td>diallo@gmail.com</td>
-        <td>76534893</td>
-    </tr>
+</table>
+ <!-- Next en bas du Tableau à partir de 10 personnes -->
+ <div class="tablesucrol"> <pagination-controls (pageChange)="a = $event" previousLabel="Précédente" nextLabel="Suivante"> </pagination-controls> </div>
 
-    </table>
