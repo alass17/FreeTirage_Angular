@@ -141,54 +141,36 @@ img {
     margin-top: 0px;
 }
 input[type="text"] {
-    // height: 35px;
-    // margin-top: 13px;
-    // border: 1px #4e4e4e solid;
-    // border-radius: 30px;
-    // background-color: #4e4e4e;
-    // font-size: 16px;
-    // color: white;
-    // margin-left: -4px;
-    // box-shadow:2px 2px 2px 2px rgb(19, 19,20)
-    height: 32px;
+    height: 35px;
     margin-top: 13px;
     border: 1px #4e4e4e solid;
-     border-radius: 9px;
-    font-size: 9px;
-    /* text-align: center; */
-    /* border: none; */
-    /* margin-left: 0px; */
-    box-shadow: 2px 2px rgb(19 19 20);
+    border-radius: 30px;
+    background-color: #4e4e4e;
+    font-size: 16px;
+    color: white;
+    margin-left: -4px;
+    box-shadow:2px 2px 2px 2px rgb(19, 19,20)
 }
 
 ::placeholder{
+   color:#B6BBC1;
    font-size: 16px; 
    text-align: center;
 }
 
 input[type="number"] {
-    // margin-top: 12px;
-    // color: white;
-    // border: 1px solid #3a3737;
-    // border-radius:30px;
-    // border: 1px #4e4e4e solid;
-    // background-color: #4e4e4e;
-    // font-size: 20px;
-    // margin-left: -4px;
-    // box-shadow:2px 2px 2px 2px rgb(19, 19,20);
-    // height: 35px;
-    // width: 200px;
-    margin-top: 6px;
+    margin-top: 12px;
+    color: white;
     border: 1px solid #3a3737;
+    border-radius:30px;
     border: 1px #4e4e4e solid;
-    font-size: 15px;
-    margin-left: 17px;
-    box-shadow: 2px 2px rgb(19 19 20);
-    height: 30px;
-    width: 112px;
-    border-radius: 9px;
+    background-color: #4e4e4e;
+    font-size: 20px;
+    margin-left: -4px;
+    box-shadow:2px 2px 2px 2px rgb(19, 19,20);
+    height: 35px;
+    width: 200px;
 }
-
 
 button.droite{
    
@@ -217,8 +199,8 @@ button{
         background-color: #ff6600;
         font-size: 24px;
         color: white;
-        margin-top: 2px;
-        margin-left: -37px;
+        margin-top: 18px;
+        margin-left: -2px;
         font-weight: bold;
         box-shadow:2px 2px 2px 2px rgb(19, 19, 20);
         
@@ -226,8 +208,15 @@ button{
     button:hover {
         background-color: rgb(19, 16, 16);
     }
-   
-    
+    input[type="file"]{
+
+    border: 1px #4e4e4e solid;
+    border-radius: 20px;
+    background-color: #4e4e4e;
+    color: white;
+    font-size: 20px;
+    width: 350px;
+    }
      a{
         text-decoration: none;
         color: blue;
@@ -237,11 +226,4 @@ button{
     svg.bi.bi-upload {
         color: blue;
         font-weight: bold;
-    }
-
-    select {
-        width: 109px;
-        height: 28px;
-        margin-left: 6px;
-        border-radius: 9px;
     }
